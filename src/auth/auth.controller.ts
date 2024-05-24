@@ -32,7 +32,7 @@ export class AuthController {
     const user = req['user'] as User;
     return{
       user,
-      token : this.authService.getToken({id:user.id})
+      token : this.authService.getToken({id:user._id})
     } ;
   }
 
